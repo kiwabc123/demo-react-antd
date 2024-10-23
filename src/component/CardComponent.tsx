@@ -1,4 +1,4 @@
-// components/CardComponent.tsx
+
 import React from 'react';
 import { Card } from 'antd';
 import { useTranslation } from 'react-i18next';
@@ -15,9 +15,9 @@ export const CardComponent: React.FC<CardProps> = (props: CardProps) => {
   const { t } = useTranslation();
   const { titleKey, descriptionKey ,path} = props; 
   const navigate = useNavigate();
-  // Log the translations for debugging
+  
   const handleClick = () => {
-    path&& navigate(path); // Navigate to the provided path
+    path&& navigate(path); 
   };
   return (
     <Card hoverable className="custom-card" onClick={()=>handleClick()}>

@@ -22,7 +22,7 @@ const ShapeCard = (props: propType) => {
     cursor: 'pointer',
   };
 
-  // Triangle style
+  
   const triangleStyle: React.CSSProperties = {
     width: '0',
     height: '0',
@@ -36,7 +36,7 @@ const ShapeCard = (props: propType) => {
     transformOrigin: 'center',
   };
 
-  // Circle style
+  
   const circleStyle: React.CSSProperties = {
     width: '50px',
     height: '50px',
@@ -48,7 +48,7 @@ const ShapeCard = (props: propType) => {
     transform: 'translate(-50%, -50%)',
   };
 
-  // Square style
+  
   const squareStyle: React.CSSProperties = {
     width: '50px',
     height: '50px',
@@ -59,7 +59,7 @@ const ShapeCard = (props: propType) => {
     transform: 'translate(-50%, -50%)',
   };
 
-  // Rectangle style
+  
   const rectangleStyle: React.CSSProperties = {
     width: '80px',
     height: '40px',
@@ -70,13 +70,13 @@ const ShapeCard = (props: propType) => {
     transform: 'translate(-50%, -50%)',
   };
 
-  // Diamond style
-  // Star style
+  
+  
   const starStyle: React.CSSProperties = {
     width: '0px',
     height: '0px',
     margin: '1em auto',
-    fontSize: '2em', // Adjust size as needed
+    fontSize: '2em', 
     position: 'relative',
     display: 'block',
     borderRight: '1em solid transparent',
@@ -115,35 +115,33 @@ const ShapeCard = (props: propType) => {
 
 
 
-  // Pentagon style
-// Pentagon style
+  
+
 const pentagonStyle: React.CSSProperties = {
-  width: '60px', // Width of the pentagon
-  height: '60px', // Height of the pentagon
-  backgroundColor: 'grey', // Pentagon color
+  width: '60px', 
+  height: '60px', 
+  backgroundColor: 'grey', 
   position: 'absolute',
-  top: '35px', // Adjust this to position it correctly
-  left: '50%', // Center horizontally
-  transform: 'translate(-50%, -50%)', // Center the pentagon
-  clipPath: 'polygon(50% 0%, 100% 38%, 81% 100%, 19% 100%, 0% 38%)', // Create a pentagon shape
+  top: '35px', 
+  left: '50%', 
+  transform: 'translate(-50%, -50%)', 
+  clipPath: 'polygon(50% 0%, 100% 38%, 81% 100%, 19% 100%, 0% 38%)', 
 };
 
   
 
-  // Hexagon style
+  
   const hexagonStyle: React.CSSProperties = {
     width: '70px',
     height: '40px',
     backgroundColor: 'grey',
     position: 'absolute',
-    top: '40px', // Adjust this value if needed
-    left: '50%', // Center horizontally
-    transform: 'translate(-50%, -50%) rotate(0deg)', // Center the hexagon
-    clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)', // Hexagon shape
+    top: '40px', 
+    left: '50%', 
+    transform: 'translate(-50%, -50%) rotate(0deg)', 
+    clipPath: 'polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)', 
   };
   
-
-  // Render the shape based on the prop
   const renderShape = () => {
     switch (props.shape) {
       case 'triangle':
