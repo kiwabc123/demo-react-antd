@@ -1,0 +1,20 @@
+.app-container {
+    padding: 16px;
+    position: relative; /* To position elements inside relative to the container */
+  }
+  
+  .page-header {
+    position: absolute;
+    top: 48px;
+    right: 0px;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+  
+  .page-header h1 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
