@@ -26,7 +26,6 @@ function AppContent() {
 
   return (
     <div className="app-container" style={{ position: 'relative', padding: '20px' }}>
-      {/* Language Switcher and Home Button */}
       <div style={{ position: 'absolute', top: 10, right: 20, display: 'flex',flexDirection:"row-reverse", alignItems: 'flex-end' }}>
         <Select
           defaultValue={language}
@@ -44,7 +43,6 @@ function AppContent() {
         )}
       </div>
 
-      {/* Define Routes */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/card1" element={<Page1 />} />
